@@ -74,7 +74,7 @@
                                     newCount = count.replace('XX', `${newUserStr.length}`);
                                     
                                 }
-                                
+
                                 let elPhrase = document.getElementById('phrase');
                                 elPhrase.textContent = userStr;
                                 let elCount = document.getElementById('count');
@@ -87,10 +87,23 @@
                     <!-- Code Description -->
                     <h3 class="fw-bold">JS Char Count</h3>
                     <p>Using HTML, JavaScript, custom CSS & Bootstrap to design an application that captures user input
-                        and then executes code to count the character of that input but doesn't include the spaces, displaying the count back to the page.</p>
-                    <h5>|function|</h5>
-                    <p>|description|</p>
-                    <br>
+                        and then executes code to count the character of that input but doesn't include the spaces,
+                        displaying the count back to the page.</p>
+                    <h4 class="fw-bold">The code is structure in single controller function.</h4>
+                    <h5>displayCount() function </h5>
+                    <p>Here we use javascript to "Get" the value from the HTML file user input field by using
+                        <span class="fw-bold">document.getElementById</span>
+                        to locate the html tag with id of 'word'.</p>
+                    <p>Declaring string variables called 'count', 'newUserStr' and 'newCount' that will be used to
+                        display information back to the page.</p>
+                    <p>Then using an if-statement/boolean to check to see if 'XX' exist in the 'count' string,
+                        which is always true in this case. We then split the string at every space and then join it back
+                        together without the spaces as the variable 'newUserStr'. Then we replace the 'XX' in the
+                        'count'
+                        string with the length of the 'newUserStr' string in the variable 'newCount'.</p>
+                    <p>Finally, using <span class="fw-bold">document.getElementById</span> and the <span
+                            class="fw-bold">.textContent</span> property we write the original user string back to the
+                        page and the message with the character count held in the 'newCount' variable.</p>
                 </div>
             </div>
         </div>
