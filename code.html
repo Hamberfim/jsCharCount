@@ -63,27 +63,31 @@
                             // function to count and display the number of characters
                             function displayCount() {
 
-                                let word = document.getElementById('word').value;
+                                let userStr = document.getElementById('word').value;
 
-                                let phrase = word + " <-- has XX characters (not including spaces).";
-                                let newPhrase = "";
+                                let count = "Your input has XX characters (not including spaces).";
+                                let newUserStr = "";
+                                let newCount = "";
 
-                                if(phrase.includes('XX')) {
-                                    word = word.split(" ").join("");  // remove space to count only letters
-                                    newPhrase = phrase.replace('XX', `${word.length}`);
+                                if(count.includes('XX')) {
+                                    newUserStr = userStr.split(" ").join("");  // remove space to count only letters
+                                    newCount = count.replace('XX', `${newUserStr.length}`);
                                     
                                 }
+                                
                                 let elPhrase = document.getElementById('phrase');
-                                elPhrase.textContent = newPhrase;
-
+                                elPhrase.textContent = userStr;
+                                let elCount = document.getElementById('count');
+                                elCount.textContent = newCount;
                             }
                         </code>
                     </pre>
                 </div>
                 <div class="col-md-4">
                     <!-- Code Description -->
-                    <p>A JavaScript Application that counts the number of characters, not including spaces, from a user
-                        input field.</p>
+                    <h3 class="fw-bold">JS Char Count</h3>
+                    <p>Using HTML, JavaScript, custom CSS & Bootstrap to design an application that captures user input
+                        and then executes code to count the character of that input but doesn't include the spaces, displaying the count back to the page.</p>
                     <h5>|function|</h5>
                     <p>|description|</p>
                     <br>

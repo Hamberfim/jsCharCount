@@ -14,6 +14,7 @@ function displayCount() {
         newCount = count.replace('XX', `${newUserStr.length}`);
         
     }
+    
     let elPhrase = document.getElementById('phrase');
     elPhrase.textContent = userStr;
     let elCount = document.getElementById('count');
