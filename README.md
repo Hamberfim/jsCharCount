@@ -1,2 +1,2 @@
-### JS-Character Count
-A JavaScript App that counts the number of characters from a user input field but doesn't include spaces as characters. 
+### JavaScript Character Count Application
+A JavaScript Application that counts the number of characters, not including spaces, from a user input field.
